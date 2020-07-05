@@ -92,7 +92,7 @@ hr {
     display:block;
     height:1px;
     border:0;   
-    border-top:1px solid #cccccc;
+    border-top: 1px solid #cccccc;
     margin:1em 0;
     padding:0;
 }
@@ -105,9 +105,10 @@ input, select {
 
 * {
     text-decoration: none;
+    margin: auto -50px auto 10px;
 }
 
-hr {
+hr.wrapper {
     box-sizing:content-box;
     height:0;
     overflow:visible;
@@ -118,12 +119,11 @@ hr {
 header {
     background-color: #fff;;
     width: 100%;
-    height: 100px;
-    /*border-bottom: 2px solid #111;*/
+    height: 170px;
 }
 
 header .header-brand {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Roboto Mono', monospace;
     font-size: 24px;
     font-weight: 900;
     color: #111;
@@ -136,30 +136,45 @@ header .header-brand {
 
 header nav ul {
     display: block;
-    margin: 0 auto;
+    margin: 0 -10px;
     width: fit-content;
 
 }
 
 header nav ul li {
-    display: inline-block;
+    display: block;
     float: left;
     list-style: none;
     padding: 0 16px;
 }
 
 header nav ul li a {
-    font-family: 'Nunito', sans-serif;
-    font-size: 16px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 18px;
     color: #111;
     text-transform: uppercase;
 }
 
-header .header-cases {
-    display: none;
+header nav img {
+    margin: 20px 33px;
+}
+
+header .header-cases img {
+    width: 50px;
+    margin-bottom: 10px;
 }
 
 @media only screen and (min-width: 1000px) {
+    * {
+        margin: auto;
+    }
+
+    header {
+        background-color: #fff;;
+        width: 100%;
+        height: 100px;
+    }
+
     header .header-brand {
         margin: 31px 0;
         text-align: left;
@@ -185,35 +200,35 @@ header .header-cases {
         color: #111;
         text-transform: uppercase;
         line-height: 38px;
-        border: 1px solid #111;
         float: right;
         margin-right: 40px;
         margin-top: 30px;
         padding: 0 20px;
     }
+
+    header nav img {
+        margin: -5px -30px 0px -30px;
+    }
 }
 
-/* INDEX PAGE */
+/* TITLE */
 
 .index-banner {
     width: 100%;
-    height: calc(100vh - 100px);
-    background-image: url('img/blue_banner9.jpg'); 
-    /*background-color: rgb(10, 49, 221);*/
+    height: 940px;
+    background-image: url('img/blue_banner9.jpg');
     background-repeat: no-repeat;
-    background-position: 25% 75%;
+    background-position: 0px -285px;
     background-size: cover;
-    display: table;
 }
 
 .vertical-center {
-    display: table-cell;
     vertical-align: middle;
 }
 
 .personal-image {
-    display: table-cell;
     vertical-align: middle;
+    margin: 50px 50px 20px 50px;
 }
 
 .personal-image img {
@@ -238,6 +253,12 @@ header .header-cases {
     text-align: center;
 }
 
+.index-banner p {
+    font-size: 25px;
+    text-decoration: underline;
+    text-align: center;
+}
+
 .index-links div {
     margin: 16px 16px 0;
     width: calc(100% - 20px);
@@ -255,10 +276,40 @@ header .header-cases {
     text-transform: uppercase;
 }
 
+/* About me, Experience, and Education */
+
+.wrapper {
+    line-height: 40px;
+    font-family: 'Roboto Mono', monospace;
+    text-align: left;
+    color: #111;
+    font-weight: 100;
+}
+
+.wrapper h2 {
+    font-size: 45px;
+}
+
+.wrapper h3 {
+    font-size: 30px;
+}
+
+.wrapper h4 {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+#about p a {
+    text-decoration: underline;
+}
+
+#multisig-hmac-items {
+    margin-left: 20px;
+}
+
 @media only screen and (min-width: 1000px) {
     .wrapper {
-        width: 1000px;
-        margin: 0 auto;
+        margin: 0 200px 0 50px;
     }
 
     .wrapper h1 {
@@ -272,6 +323,16 @@ header .header-cases {
 
     .index-banner {
         height: 450px;
+        display: table;
+        background-position: 25% 75%;
+    }
+
+    .vertical-center {
+        display: table-cell;
+    }
+
+    .personal-image {
+        display: table-cell;
     }
 
     .index-banner h1 {
@@ -300,47 +361,9 @@ header .header-cases {
     }
 }
 
-
-/* RESUME */
-
-.resume {
-    margin-left: 35px;
-    line-height: 30px;
-}
-
-.resume h2 {
-    font-family: 'Nunito', sans-serif;
-    font-size: 45px;
-    font-weight: 100;
-    line-height: 40px;
-    color: #111;
-    text-align: left;
-}
-
-.resume h3 {
-    font-family: 'Nunito', sans-serif;
-    font-size: 30px;
-    font-weight: 100;
-    line-height: 40px;
-    color: #111;
-    text-align: left;
-}
-
-.resume h4 {
-    font-family: 'Nunito', sans-serif;
-    font-size: 20px;
-    font-weight: 900;
-    line-height: 40px;
-    color: #111;
-    text-align: left;
-}
-
-#multisig-hmac-items {
-    margin-left: 20px;
-}
-
 /* FOOTER */
 
+/*
 footer {
     width: calc(100% - 80px);
     padding: 40px 40px;
@@ -376,3 +399,4 @@ footer ul li a {
     width: 100%;
     margin-bottom: 10px;
 }
+*/
