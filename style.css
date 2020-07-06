@@ -122,6 +122,10 @@ header {
     height: 170px;
 }
 
+header a:hover {
+    color: #54BDEB;
+}
+
 header .header-brand {
     font-family: 'Roboto Mono', monospace;
     font-size: 24px;
@@ -146,6 +150,10 @@ header nav ul li {
     float: left;
     list-style: none;
     padding: 0 16px;
+}
+
+header nav ul li a:hover {
+    color: #54BDEB;
 }
 
 header nav ul li a {
@@ -195,7 +203,7 @@ header .header-cases img {
 
     header .header-cases {
         display: block;
-        font-family: 'Nunito', sans-serif;
+        font-family: 'Roboto Mono', monospace;
         font-size: 16px;
         color: #111;
         text-transform: uppercase;
