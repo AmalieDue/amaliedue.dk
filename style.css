@@ -56,6 +56,7 @@ a {
     font-size:100%;
     vertical-align:baseline;
     background:transparent;
+    color: blue
 }
 
 /* change colours to suit your needs */
@@ -226,7 +227,7 @@ header .header-cases img {
     height: 100%;
     padding-top: 2%;
     /*margin-top: 100px;*/
-    background-image: url('img/blue_banner9.jpg');
+    /*background-image: url('img/blue_banner9.jpg');*/
     background-repeat: no-repeat;
     background-position: center;
     /*background-position: 0px -285px;*/
